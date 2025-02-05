@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -7,12 +7,13 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    width: 90vw;
+    width: 90vh;
     max-width: 600px;
     display: block;
-    margin-bottom: 2rem;
+    margin: 2rem;
     margin-top: -3rem;
   }
+
   h3 {
     margin-bottom: 0.5rem;
   }
