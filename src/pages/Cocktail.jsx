@@ -1,4 +1,10 @@
+import CocktailCard from "../components/CocktailCard";
+
 const Cocktail = () => {
-  return <h1>Cocktail</h1>;
+  return (
+    <div>
+      <CocktailCard />
+    </div>
+  );
 };
 export default Cocktail;

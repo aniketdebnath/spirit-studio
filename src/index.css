@@ -8,6 +8,20 @@
   box-sizing: border-box;
 }
 
+/* For Firefox */
+html {
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+/* General */
+/* html,
+body {
+  overflow-y: scroll; /* Keep scroll functionality */
+} */
+
+html {
+  font-size: 100%;
+} /*16px*/
 html {
   font-size: 100%;
 } /*16px*/
