@@ -3,7 +3,7 @@ import {
   About,
   Landing,
   Cocktail,
-  NewsLetter,
+  Newsletter,
   HomeLayout,
   Error,
 } from "./pages";
@@ -13,10 +13,24 @@ const App = () => {
     {
       path: "/",
       element: <HomeLayout />,
-    },
-    {
-      path: "/about",
-      element: <About />,
+      children: [
+        {
+          path: "landing",
+          element: <Landing />,
+        },
+        {
+          path: "cocktail",
+          element: <Cocktail />,
+        },
+        {
+          path: "newsletter",
+          element: <Newsletter />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;

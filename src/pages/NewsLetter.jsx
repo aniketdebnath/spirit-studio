@@ -1,4 +1,4 @@
-const NewsLetter = () => {
-  return <h1>NewsLetter</h1>;
+const Newsletter = () => {
+  return <h1>Newsletter</h1>;
 };
-export default NewsLetter;
+export default Newsletter;
