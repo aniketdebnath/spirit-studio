@@ -16,7 +16,6 @@ html {
 /* General */
 /* html,
 body {
-  overflow-y: scroll; /* Keep scroll functionality */
 } */
 
 html {
@@ -272,6 +271,10 @@ ul {
   border-radius: 50%;
   border-top-color: var(--primary-500);
   animation: spinner 0.6s linear infinite;
+  /* Centering the spinner */
+  position: fixed; /* Fixes the spinner relative to the viewport */
+  top: 50%; /* Move to the center vertically */
+  left: 50%; /* Move to the center horizontally */
 }
 
 /* title */
