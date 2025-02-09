@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Wrapper from "../../../starter/src/assets/wrappers/CocktailCard";
+import Wrapper from "../assets/wrappers/CocktailCard";
 const CocktailCard = ({ id, name, info, image, glass }) => {
   return (
     <Wrapper>
