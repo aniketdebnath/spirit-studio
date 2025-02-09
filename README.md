@@ -1,63 +1,75 @@
-# Spirit Studio - Cocktail Finder
+# Spirit Studio - Cocktail Recipe App
 
-Spirit Studio is a modern cocktail discovery application built with React, TypeScript, and React Query. Users can search for cocktails, view detailed recipes, and explore new drinks in an intuitive and responsive interface.
-
----
-
-## **Features**
-
-- **Search Cocktails** – Find drinks using TheCocktailDB API
-- **Detailed Drink Pages** – View ingredients, instructions, and images
-- **React Router** – Seamless navigation between pages
-- **Optimized API Fetching** – Efficient data fetching and caching with React Query
-- **State Management** – Uses React Context API
-- **Dark Mode UI** – Red and black theme for an elegant look
-- **Performance Optimized** – Client-side caching with React Query
-- **Responsive Design** – Mobile-friendly interface
+Spirit Studio is a React-based **Single Page Application (SPA)** that provides users with cocktail recipes. The app fetches data from **TheCocktailDB API** and allows users to search for drinks, view detailed cocktail information, and subscribe to a newsletter. The project is built with modern frontend technologies, including **React Router 6.4+, React Query 4.2+, Axios, and Styled Components**.
 
 ---
 
-## **Tech Stack**
+## Features
 
-### **Frontend**
-
-- React (Component-based UI)
-- React Router (Client-side navigation)
-- TypeScript (Strongly-typed React components)
-- React Query (Efficient API fetching and state management)
-- Styled Components (CSS-in-JS for styling)
-- Tailwind CSS (Utility-first styling)
-- Axios (Fetching cocktails from TheCocktailDB API)
+- **Search Cocktails** by name using **TheCocktailDB API**
+- **Detailed Cocktail Information** with ingredients and instructions
+- **React Router 6.4+** for client-side navigation with Loaders & Actions
+- **React Query 4.2+** for efficient data fetching and caching
+- **Custom Loaders in React Router** to fetch data before rendering pages
+- **Styled Components** for modular CSS-in-JS styling
+- **Toast Notifications** using React Toastify
+- **Newsletter Subscription** with form handling and API integration
+- **Global Loading Indicator** with `useNavigation()`
+- **Optimized Performance** with React Query caching
 
 ---
 
-## **Installation & Setup**
+## Tech Stack
 
-### **Clone the Repository**
+### Frontend
+
+- **React** – Functional components & hooks
+- **React Router 6.4+** – Routing, Loaders, Actions, Navigations
+- **React Query 4.2+** – API fetching & caching
+- **Axios** – HTTP requests handling
+- **Styled Components** – Component-based styling
+- **React Toastify** – Notifications
+- **TheCocktailDB API** – External data source
+
+---
+
+## Installation & Setup
+
+### Clone the Repository
 
 ```sh
 git clone https://github.com/yourusername/spirit-studio.git
 cd spirit-studio
 ```
 
-### **Install Dependencies**
+### Install Dependencies
 
 npm install
 
-# OR
+### Start the Development Server
 
-yarn install
+npm run dev
 
-### **Start the Development Server**
+The app will be available at http://localhost:5173
 
-npm start
+## API Integration
 
-# OR
+Search Cocktails by Name
 
-yarn start
+```sh
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+```
 
-The application will be available at: http://localhost:5173/
+Fetch Cocktail Details by ID
 
-## **API Source**
+```sh
+https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007
+```
 
-This application uses TheCocktailDB API for fetching cocktail data.
+## License
+
+This project is open-source under the MIT License.
+
+## Acknowledgments
+
+Special thanks to [TheCocktailDB](https://www.thecocktaildb.com/) for providing cocktail data.
