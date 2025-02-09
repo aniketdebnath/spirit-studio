@@ -1,4 +1,4 @@
-# Spirit Studio - Cocktail Recipe App
+# Spirit Studio - Cocktail Finder
 
 Spirit Studio is a React-based **Single Page Application (SPA)** that provides users with cocktail recipes. The app fetches data from **TheCocktailDB API** and allows users to search for drinks, view detailed cocktail information, and subscribe to a newsletter. The project is built with modern frontend technologies, including **React Router 6.4+, React Query 4.2+, Axios, and Styled Components**.
 
