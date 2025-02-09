@@ -1,11 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 3rem;
     .btn {
-      margin-bottom: 1rem;
+      margin-right: auto;
+      margin-top: 3rem;
     }
   }
   .img {
