@@ -29,11 +29,11 @@ html {
   /* colors */
   --primary-100: #d1fae5;
   --primary-200: #a7f3d0;
-  --primary-300: #6ee7b7;
+  --primary-300: #e77c6e;
   --primary-400: #34d399;
-  --primary-500: #10b981;
+  --primary-500: #cf501d;
   --primary-600: #059669;
-  --primary-700: #047857;
+  --primary-700: hsl(4, 90%, 19%);
   --primary-800: #065f46;
   --primary-900: #064e3b;
 

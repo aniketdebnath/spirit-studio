@@ -10,11 +10,15 @@ const Wrapper = styled.nav`
     flex-direction: column;
     padding: 1.5rem 2rem;
   }
+  img {
+    width: 120px;
+  }
   .logo {
     font-size: clamp(1.5rem, 3vw, 3rem);
     color: var(--primary-500);
     font-weight: 700;
     letter-spacing: 2px;
+    margin-right: 30rem;
   }
   .nav-links {
     display: flex;

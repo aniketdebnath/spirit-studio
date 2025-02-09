@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import axios from "axios";
 import SearchForm from "../components/SearchForm";
 import CocktailList from "../components/CocktailList";
-import { useQuery } from "@tanstack/react-query";
+import { QueryClient, useQuery } from "@tanstack/react-query";
 
 const cocktailSearchUrl =
   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
@@ -17,19 +17,21 @@ const searchCocktailsQuery = (searchTerm) => {
   };
 };
 
-export const loader = async ({ request }) => {
-  const url = new URL(request.url);
-  const searchTerm = url.searchParams.get("search") || "v";
-  // const response = await axios.get(`${cocktailSearchUrl}${searchTerm}`);
-  return { searchTerm };
-};
+export const loader =
+  (QueryClient) =>
+  async ({ request }) => {
+    const url = new URL(request.url);
+    const searchTerm = url.searchParams.get("search");
+    await QueryClient.ensureQueryData(searchCocktailsQuery(searchTerm));
+    return { searchTerm };
+  };
 
 const Landing = () => {
   const { searchTerm } = useLoaderData();
   const { data: drinks, isLoading } = useQuery(
-    searchCocktailsQuery(searchTerm)
+    searchCocktailsQuery(searchTerm || "v")
   );
-  if (isLoading) return <div className="loading"></div>;
+
   return (
     <>
       <SearchForm searchTerm={searchTerm} />

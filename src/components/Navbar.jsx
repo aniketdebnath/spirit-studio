@@ -4,6 +4,7 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className="nav-center">
+        <img src="logo_transparent.png" alt="logo" />
         <span className="logo">Spirit Studio</span>
         <div className="nav-links">
           <NavLink to="/" className="nav-link">
