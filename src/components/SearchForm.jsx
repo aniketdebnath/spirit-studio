@@ -12,7 +12,7 @@ const SearchForm = ({ searchTerm }) => {
           type="search"
           name="search"
           className="form-input"
-          defaultValue={"w"}
+          defaultValue={searchTerm}
         />
         <button type="submit" className="btn" disabled={isSubmitting}>
           {isSubmitting ? "Searching..." : "Search"}
