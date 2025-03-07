@@ -4,7 +4,21 @@ Spirit Studio is a React-based **Single Page Application (SPA)** that provides u
 
 ---
 
-## Features
+![Spirit Studio](https://l7ewz3hqkc.ufs.sh/f/LFPunsIWlVM1HgoPDmJmtlP8RwN9aG2QAFeXy3vIOkrubnWK)
+
+## 🚀 Tech Stack & Libraries Used
+
+- **React 19** – UI Component Library
+- **React Router 6.4+** – Routing, Loaders, Actions, Navigations
+- **React Query 4.2+** – API fetching & caching
+- **Axios** – HTTP requests handling
+- **Styled Components** – Component-based styling
+- **React Toastify** – Notifications
+- **TheCocktailDB API** – External data source
+
+---
+
+## 📌 Features
 
 - **Search Cocktails** by name using **TheCocktailDB API**
 - **Detailed Cocktail Information** with ingredients and instructions
@@ -19,61 +33,61 @@ Spirit Studio is a React-based **Single Page Application (SPA)** that provides u
 
 ---
 
-## Tech Stack
+## 🛠️ Project Setup & Configuration
 
-### Frontend
-
-- **React** – Functional components & hooks
-- **React Router 6.4+** – Routing, Loaders, Actions, Navigations
-- **React Query 4.2+** – API fetching & caching
-- **Axios** – HTTP requests handling
-- **Styled Components** – Component-based styling
-- **React Toastify** – Notifications
-- **TheCocktailDB API** – External data source
-
----
-
-## Installation & Setup
-
-### Clone the Repository
+### **📌 Clone the Repository**
 
 ```sh
 git clone https://github.com/yourusername/spirit-studio.git
 cd spirit-studio
 ```
 
-### Install Dependencies
+### **📌 Install Dependencies**
 
 ```sh
 npm install
+# or
+yarn install
 ```
 
-### Start the Development Server
+### **📌 Configure Environment Variables**
+
+Create a `.env` file and configure the required environment variables.
+
+### **📌 Run the Development Server**
 
 ```sh
 npm run dev
+# or
+yarn dev
 ```
 
-The app will be available at http://localhost:5173
-
-## API Integration
-
-Search Cocktails by Name
+### **📌 Build for Production**
 
 ```sh
-https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+npm run build && npm start
 ```
 
-Fetch Cocktail Details by ID
+### **📌 Run Tests**
 
 ```sh
-https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007
+npm run test
 ```
 
-## License
+---
 
-This project is open-source under the MIT License.
+## 📜 License
 
-## Acknowledgments
+This project is licensed under the **MIT License**. Feel free to modify and use it for personal or commercial projects.
 
-Special thanks to [TheCocktailDB](https://www.thecocktaildb.com/) for providing cocktail data.
+---
+
+## ⭐ Contributing
+
+Contributions are welcome! Feel free to fork the repo, create a feature branch, and submit a pull request.
+
+---
+
+## 📬 Contact
+
+For inquiries, reach out via [rkstaraniket34@gmail.com](mailto:rkstaraniket34@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/aniketdebnath/).
